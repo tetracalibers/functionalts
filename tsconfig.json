@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["DOM", "ESNext"],
+    "types": ["node"],
+    "jsx": "react-jsx",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    // 宣言されたが使用されていない変数が存在する場合にコンパイルエラーにする
+    "noUnusedLocals": false, // TODO 完成したプログラムのbuild時はtrue推奨
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "./**/dist/*"
+  ]
+}
