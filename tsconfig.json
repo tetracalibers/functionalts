@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "lib": ["DOM", "ESNext"],
+    "target": "ESnext",
     "types": ["node"],
     "jsx": "react-jsx",
     "module": "commonjs",
@@ -20,6 +19,9 @@
     "skipLibCheck": true,
     "outDir": "./dist",
     "resolveJsonModule": true,
+    // コンパイルしたtsファイルの中でexportしているもの全ての型定義ファイルを出力する
+    "declaration": true,
+    "declarationMap": true,
   },
   "include": [
     "./**/*"
